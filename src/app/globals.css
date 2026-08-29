@@ -1,8 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 @import './premium-1.css';
 @import './premium-2.css';
 @import './premium-3.css';
 @import './premium-4.css';
 @import './premium-5.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
