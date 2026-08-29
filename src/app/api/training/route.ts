@@ -1,0 +1,2 @@
+import { NextResponse } from 'next/server';
+export async function POST(req:Request){try{const payload=await req.json();const required=['firstName','lastName','birthDate','governorate','delegation','email','phone'];if(required.some(k=>!payload?.[k]))return NextResponse.json({error:'Missing required field.'},{status:400});console.info('AUSECOURS training registration',payload);return NextResponse.json({ok:true})}catch{return NextResponse.json({error:'Invalid request.'},{status:400})}}
