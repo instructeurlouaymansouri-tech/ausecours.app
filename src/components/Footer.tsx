@@ -1,12 +1,2 @@
-'use client';
-
-import { useI18n } from '@/lib/i18n';
-
-export default function Footer() {
-  const { t } = useI18n();
-  return (
-    <footer className="border-t border-white/10 px-5 py-6 text-center text-xs text-muted">
-      AUSECOURS · {t('footer_tag')} · <b className="font-semibold text-white">Powered By Mansouri Louay</b>
-    </footer>
-  );
-}
+import Link from 'next/link';
+export default function Footer(){return <footer className="site-footer"><div className="footer-urban"/><div className="footer-inner"><div><span className="eyebrow">AUSECOURS • النجدة</span><h2>We’re here for you.</h2><p>Emergency guidance, prevention and practical first-aid education — built for Tunisia.</p></div><div className="footer-contacts"><a href="tel:+21622426714">+216 22 426 714</a><a href="mailto:instructeurlouaymansouri@gmail.com">Email us</a><a href="https://wa.me/21622426714" target="_blank" rel="noreferrer">WhatsApp</a><Link href="/training">Join a training session</Link></div></div><div className="footer-bottom"><span>© 2026 AUSECOURS</span><span>Powered By Mansouri Louay</span></div></footer>}
