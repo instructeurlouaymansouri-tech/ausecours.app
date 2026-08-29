@@ -1,11 +1,2 @@
-import ChatWindow from '@/components/ChatWindow';
-
-export const metadata = { title: 'Chat · AUSECOURS' };
-
-export default function ChatPage() {
-  return (
-    <div className="mx-auto max-w-[1100px] px-5 py-6">
-      <ChatWindow />
-    </div>
-  );
-}
+import { AssistantPage } from '@/components/AppPages';
+export default function Page(){return <AssistantPage/>}
